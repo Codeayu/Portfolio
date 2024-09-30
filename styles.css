@@ -1,0 +1,45 @@
+$primary-color: #4caf50; // Example color
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
+  color: #333;
+}
+
+.animated-background {
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.skills-section .skill-item {
+  margin: 10px 0;
+}
+
+.progress {
+  background: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: $primary-color;
+  height: 20px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+}
